@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body{
+    display: flex;
+    height: 100vh;
+    background: #000;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    position: absolute;
+    width: 460px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.100);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 15px;
+    border: 0.25px solid rgba(255, 255, 255, 0.5);
+    user-select: none;
+    z-index: 1;
+}
+.container .inf{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.105);
+}
+.container input[type="text"],  input[type="email"]{
+    margin: 10px;
+    height: 40px;
+    width: 260px;
+    font-size: 16px;
+    background: none;
+    color: #fafafa;
+    border: 0.5px solid #fafafa;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.7s;
+}
+.container input[type="text"]:focus,  input[type="email"]:focus{
+    width: 300px;
+    text-align: center;
+}
+.container li{
+   
+    font-size: 40px;
+    list-style: none;
+    text-decoration: none;
+    color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transition: 0.75s;
+}
+.container .text , label{
+    font-size: 20px;
+    color: #fafafa;
+}
+.al{
+    margin-top: 10px;
+}
+.container .al{
+    display: flex;
+}
+.person, .conh , .cont{
+    margin: 10px;
+    text-align: center;
+}
+li:hover{
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    transition: 1s;
+    -webkit-backdrop-filter: blur(15px);
+    border: 0.25px solid rgba(255, 255, 255, 0.5);
+    font-size: 45px;
+}
+.bt{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+input[type="button"]{
+    margin-right: 20px;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    background: none;
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    color: #fafafa;
+    transition: 0.5s;
+}
+.inf label {
+    margin: 10px;
+}
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background: linear-gradient(#e91e63, #ffc107);*/
+    /*background: linear-gradient(#574bcd, #41e975);*/
+    background: linear-gradient(#e91e63, #ffc107);
+    clip-path: circle(22% at 30% 20%);
+}
+body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( #c22ed0 , #0afb60);
+    /*background: linear-gradient(#574bcd, #41e975);*/
+    clip-path: circle(20% at 70% 90%);
+}
+.al .on{
+    color: #a2ff00;
+}
+.al .on2{
+    color: #a2ff00;
+}
+.al .on3{
+    color: #a2ff00;
+}
+input[type="button"]:hover{
+    background: rgba(255, 255, 255, 0.105);
+    transform: translateY(-6px);
+    border: 0.5px solid #a2ff00;
+}
+input[type="button"]:focus{
+    background: rgba(255, 255, 255, 0.105);
+
+}
